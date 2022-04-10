@@ -1,12 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Jokes Now</title>
+  </head>
+  <body class="m-0 vh-100 row justify-content-center align-items-center">
+    <div class="div-container row m-0 justify-content-center align-items-center position-relative">
+        <div class="col-sm-6">
+            <div class="card p-3">
+                <div class="card-body pb-5 text-center">
+                    <h3 class="card-title pt-1">Bromas para empezar el día <span style="font-size:30px">&#128516;</span></h3>
+                        
+                    <div class="py-5 lead" id="text"></div>
+                    <div class="stars d-flex justify-content-center">
+                        <form action="" class="">
+                            <input class="star star-3" id="star-3" type="radio" name="star"/>
+                            <label class="star star-3" for="star-3"></label>
+                            <input class="star star-2" id="star-2" type="radio" name="star"/>
+                            <label class="star star-2" for="star-2"></label>
+                            <input class="star star-1" id="star-1" type="radio" name="star"/>
+                            <label class="star star-1" for="star-1"></label>
+                          </form>
+                        </div>
+                        <button class="btn btn-primary" type="submit" onclick="score()">Calificar</button>
+                        <a href="#" onclick="bromas()" class="btn mt-5 mx-auto btn-success d-block w-50">Siguiente chiste</a>
+                    </div>
+                </div>
+            </div>
+    <script src="reportJokes.js"></script>
+    <script src="jokes.js"></script>
 </body>
 </html>
